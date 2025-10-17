@@ -1,19 +1,13 @@
-const mongoose = require('mongoose');
-require('dotenv').config();
+require("dotenv").config();
+const mongoose = require("mongoose");
 
-const conectarDB = async () => {
+const dbconnect = async () => {
   try {
-    const mongoUri = process.env.MONGO_URI || 'mongodb://localhost:27017/estudiantesdb';
-    await mongoose.connect(mongoUri, { 
-      useNewUrlParser: true, 
-      useUnifiedTopology: true 
-    });
-    
-    console.log('✅ MongoDB conectado');
-  } catch (err) {
-    console.error('❌ Error al conectar MongoDB:', err);
-    process.exit(1);
+    await mongoose.connect(process.env.MONGO_URI);
+    console.log("✅ Conexión exitosa a MongoDB Atlas");
+  } catch (error) {
+    console.error("❌ Error al conectar a MongoDB Atlas:", error.message);
   }
 };
 
-module.exports = conectarDB;
+module.exports = dbconnect;

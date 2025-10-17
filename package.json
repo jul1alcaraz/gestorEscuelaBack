@@ -1,0 +1,20 @@
+{
+  "name": "GestorEscolar",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev":"nodemon app.js"
+  },
+  "keywords": [],
+  "author": "Julieta Alcaraz",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^8.17.1",
+    "dotenv": "^16.1.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

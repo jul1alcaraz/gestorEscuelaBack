@@ -3,16 +3,16 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev":"nodemon app.js"
+    "dev": "nodemon app.js"
   },
   "keywords": [],
   "author": "Julieta Alcaraz",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "dotenv": "^16.6.1",
     "express": "^5.1.0",
-    "mongoose": "^8.17.1",
-    "dotenv": "^16.1.4"
+    "mongoose": "^8.17.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
